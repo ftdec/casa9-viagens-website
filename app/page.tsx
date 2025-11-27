@@ -233,7 +233,7 @@ export default function Home() {
                     <div className="w-16 h-16 bg-gradient-to-br from-ocean-100 to-ocean-50 rounded-2xl flex items-center justify-center mb-6 group-hover:from-ocean-500 group-hover:to-ocean-400 group-hover:scale-110 transition-all duration-300 mx-auto shadow-sm">
                       <Icon className="w-8 h-8 !text-black group-hover:!text-white transition-colors duration-300" />
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-neutral-text mb-3 group-hover:text-ocean-600 transition-colors">
+                    <h3 className="text-xl font-serif font-bold text-neutral-text mb-3 group-hover:text-ocean-600 transition-colors min-h-[3.5rem] flex items-center justify-center">
                       {pilar.title}
                     </h3>
                     <p className="text-neutral-text-light leading-relaxed text-sm">

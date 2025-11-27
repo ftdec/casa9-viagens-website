@@ -250,7 +250,7 @@ export default function SobrePage() {
                   <div className="w-10 h-10 bg-ocean-500 rounded-full flex items-center justify-center mb-4 text-white font-bold text-sm mx-auto">
                     {index + 1}
                   </div>
-                  <h3 className="text-base md:text-lg font-serif font-bold text-neutral-text mb-2 text-center">
+                  <h3 className="text-base md:text-lg font-serif font-bold text-neutral-text mb-2 text-center min-h-[3rem] flex items-center justify-center">
                     {pilar.title}
                   </h3>
                   <p className="text-sm text-neutral-text-light">{pilar.desc}</p>
