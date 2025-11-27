@@ -154,20 +154,20 @@ export default function ExperienceCard({
           <button
             onClick={handleContact}
             disabled={isSubmitting}
-            className="flex-1 px-4 py-3 bg-ocean-500 hover:bg-ocean-600 disabled:bg-ocean-300 text-white rounded-xl font-medium text-sm transition-all hover:scale-105 disabled:scale-100 flex items-center justify-center gap-2"
+            className="flex-1 px-4 py-3 bg-white hover:bg-sand-50 disabled:bg-sand-100 text-black rounded-xl font-medium text-sm transition-all hover:scale-105 disabled:scale-100 flex items-center justify-center gap-2 border-2 border-black shadow-md"
           >
             <MessageCircle className="w-4 h-4" />
-            {isSubmitting ? "Carregando..." : "Quero conversar…"}
+            {isSubmitting ? "Carregando..." : "Quero conversar"}
           </button>
 
           {isGroup && (
             <button
               onClick={handleWaitlist}
-              className="px-4 py-3 bg-sand-100 hover:bg-sand-200 text-neutral-text rounded-xl font-medium text-sm transition-all hover:scale-105 flex items-center justify-center gap-2 whitespace-nowrap"
+              className="px-4 py-3 bg-white hover:bg-sand-50 text-black rounded-xl font-medium text-sm transition-all hover:scale-105 flex items-center justify-center gap-2 whitespace-nowrap border-2 border-black shadow-md"
               title="Entrar na lista de espera"
             >
               <Users className="w-4 h-4" />
-              Lista de espera
+              Lista
             </button>
           )}
         </div>
