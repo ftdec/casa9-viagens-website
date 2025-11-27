@@ -73,12 +73,12 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative px-4 py-2 text-sm text-neutral-text hover:text-accent-gold transition-colors duration-300 font-medium group"
+                className="relative px-4 py-2 text-sm text-neutral-text hover:text-accent-gold transition-colors duration-300 font-medium group whitespace-nowrap"
               >
                 {link.label}
                 <span className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-accent-gold group-hover:w-1/2 group-hover:left-1/4 transition-all duration-300" />
