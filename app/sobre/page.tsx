@@ -282,7 +282,7 @@ export default function SobrePage() {
               <Button
                 variant="secondary"
                 size="lg"
-                className="bg-white !text-black hover:bg-sand-50 w-full sm:w-auto"
+                className="bg-white !text-black hover:bg-sand-50 w-full sm:w-auto mx-auto"
               >
                 Agendar conversa <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
