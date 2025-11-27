@@ -278,16 +278,16 @@ export default function SobrePage() {
             a alma nutrida e memórias transformadoras.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
-            <Link href="/contato">
+            <Link href="/contato" className="w-full sm:w-auto flex justify-center">
               <Button
                 variant="secondary"
                 size="lg"
-                className="bg-white !text-black hover:bg-sand-50 w-full sm:w-auto mx-auto"
+                className="bg-white !text-black hover:bg-sand-50 w-full sm:w-auto"
               >
                 Agendar conversa <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
-            <Link href="/experiencias">
+            <Link href="/experiencias" className="w-full sm:w-auto flex justify-center">
               <Button
                 variant="ghost"
                 size="lg"
