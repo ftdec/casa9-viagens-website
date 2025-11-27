@@ -289,9 +289,9 @@ export default function SobrePage() {
             </Link>
             <Link href="/experiencias" className="w-full sm:w-auto flex justify-center">
               <Button
-                variant="ghost"
+                variant="secondary"
                 size="lg"
-                className="bg-white/10 text-white hover:bg-white/20 w-full sm:w-auto"
+                className="bg-white !text-black hover:bg-sand-50 w-full sm:w-auto border-2 border-black"
               >
                 Ver experiências
               </Button>
