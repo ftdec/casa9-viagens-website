@@ -63,10 +63,10 @@ export default function Header() {
               />
             </motion.div>
             <div className="flex flex-col">
-              <span className="font-serif text-base md:text-lg font-bold text-neutral-text group-hover:text-accent-gold transition-colors duration-300">
+              <span className="font-serif text-base md:text-lg font-bold text-neutral-text group-hover:text-accent-gold transition-colors duration-300 whitespace-nowrap">
                 Casa 9 Viagens
               </span>
-              <span className="text-[10px] md:text-xs text-neutral-text-light tracking-wider uppercase group-hover:text-accent-gold/80 transition-colors duration-300">
+              <span className="text-[10px] md:text-xs text-neutral-text-light tracking-wider uppercase group-hover:text-accent-gold/80 transition-colors duration-300 whitespace-nowrap">
                 Viagens de Reconexão
               </span>
             </div>
@@ -86,7 +86,7 @@ export default function Header() {
             ))}
             <Link
               href="/contato"
-              className="ml-4 px-6 py-2.5 bg-gradient-to-r from-terracotta-400 to-terracotta-500 hover:from-terracotta-500 hover:to-terracotta-600 text-neutral-text rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 shadow-md"
+              className="ml-4 px-6 py-2.5 bg-gradient-to-r from-terracotta-400 to-terracotta-500 hover:from-terracotta-500 hover:to-terracotta-600 text-neutral-text rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 shadow-md whitespace-nowrap"
             >
               <span className="font-serif">Vamos Conversar</span>
             </Link>
@@ -159,7 +159,7 @@ export default function Header() {
               >
                 <Link
                   href="/contato"
-                  className="block mt-4 px-6 py-3 bg-gradient-to-r from-terracotta-400 to-terracotta-500 hover:from-terracotta-500 hover:to-terracotta-600 text-neutral-text text-center rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
+                  className="block mt-4 px-6 py-3 bg-gradient-to-r from-terracotta-400 to-terracotta-500 hover:from-terracotta-500 hover:to-terracotta-600 text-neutral-text text-center rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap"
                   onClick={closeMenu}
                 >
                   <span className="font-serif">Vamos Conversar</span>
