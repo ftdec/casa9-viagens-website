@@ -22,8 +22,8 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/sobre", label: "Sobre" },
+    { href: "/sobre", label: "Quem Somos" },
+    { href: "/servicos", label: "Serviços" },
     { href: "/experiencias", label: "Experiências" },
     { href: "/planeje-sua-viagem", label: "Planeje sua Viagem" },
     { href: "/depoimentos", label: "Depoimentos" },

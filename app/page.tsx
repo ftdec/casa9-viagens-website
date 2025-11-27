@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import CredentialsStrip from "@/components/ui/CredentialsStrip";
-import ExperienceCard from "@/components/ui/ExperienceCard";
 import FounderCard from "@/components/ui/FounderCard";
 import NewsletterSignup from "@/components/ui/NewsletterSignup";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
@@ -20,7 +19,7 @@ import {
   Briefcase,
 } from "lucide-react";
 import { heroImages, backgroundImages } from "@/lib/images";
-import { home, experiences, seo } from "@/content";
+import { home, seo } from "@/content";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -52,9 +51,6 @@ export default function Home() {
     ...pilar,
     icon: pilaresIcons[index],
   }));
-
-  // Featured experiences (first 3)
-  const featuredExperiences = experiences.slice(0, 3);
 
   return (
     <>
@@ -308,65 +304,6 @@ export default function Home() {
 
       {/* Newsletter Section */}
       <NewsletterSignup />
-
-      {/* Featured Experiences Section */}
-      <section className="relative section-padding overflow-hidden">
-        {/* Background gradient */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-sand-50/50 via-white to-sand-50/50" />
-
-        <div className="container-max relative z-10">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <span className="text-sm font-semibold text-ocean-500 uppercase tracking-widest mb-4 block">
-              Experiências em Destaque
-            </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-neutral-text max-w-3xl mx-auto mb-4">
-              Jornadas que transformam
-            </h2>
-            <p className="text-xl text-neutral-text-light max-w-2xl mx-auto">
-              Conheça algumas das experiências que criamos com propósito e
-              cuidado
-            </p>
-          </motion.div>
-
-          <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
-            initial="hidden"
-            whileInView="visible"
-            variants={containerVariants}
-            viewport={{ once: true }}
-          >
-            {featuredExperiences.map((experience, index) => (
-              <motion.div key={experience.slug} variants={itemVariants}>
-                <ExperienceCard
-                  slug={experience.slug}
-                  title={experience.title}
-                  summary={experience.summary}
-                  description={experience.description}
-                  tags={experience.tags}
-                  isGroup={experience.isGroup}
-                  details={experience.details}
-                  idealFor={experience.idealFor}
-                />
-              </motion.div>
-            ))}
-          </motion.div>
-
-          <div className="text-center mt-12">
-            <Link href="/experiencias">
-              <Button variant="primary" size="lg" className="!text-black">
-                Ver Todas as Experiências{" "}
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="relative section-padding overflow-hidden">
