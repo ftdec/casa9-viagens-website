@@ -70,7 +70,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative px-4 py-2 text-sm text-[#B8860B] hover:text-[#9A7209] transition-colors duration-300 font-medium group whitespace-nowrap"
+                className="relative px-4 py-2 text-sm text-black hover:text-[#B8860B] transition-colors duration-300 font-medium group whitespace-nowrap"
               >
                 {link.label}
                 <span className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-[#B8860B] group-hover:w-1/2 group-hover:left-1/4 transition-all duration-300" />
@@ -137,7 +137,7 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="block px-4 py-3 text-[#B8860B] hover:text-[#9A7209] hover:bg-[#B8860B]/10 rounded-lg transition-all duration-300 font-medium"
+                    className="block px-4 py-3 text-black hover:text-[#B8860B] hover:bg-[#B8860B]/10 rounded-lg transition-all duration-300 font-medium"
                     onClick={closeMenu}
                   >
                     {link.label}
