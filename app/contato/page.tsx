@@ -235,7 +235,7 @@ export default function Contato() {
                       <h3 className="font-bold text-neutral-text mb-2">Email</h3>
                       <a
                         href="mailto:bia.casa9viagens@casa9viagens.com.br"
-                        className="text-ocean-500 hover:text-ocean-600 transition-colors text-sm break-words"
+                        className="text-ocean-500 hover:text-ocean-600 transition-colors text-xs break-words"
                       >
                         bia.casa9viagens@casa9viagens.com.br
                       </a>
