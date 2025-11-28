@@ -70,15 +70,15 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative px-4 py-2 text-sm text-neutral-text hover:text-accent-gold transition-colors duration-300 font-medium group whitespace-nowrap"
+                className="relative px-4 py-2 text-sm text-[#B8860B] hover:text-[#9A7209] transition-colors duration-300 font-medium group whitespace-nowrap"
               >
                 {link.label}
-                <span className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-accent-gold group-hover:w-1/2 group-hover:left-1/4 transition-all duration-300" />
+                <span className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-[#B8860B] group-hover:w-1/2 group-hover:left-1/4 transition-all duration-300" />
               </Link>
             ))}
             <Link
               href="/contato"
-              className="ml-4 px-6 py-2.5 bg-gradient-to-r from-terracotta-400 to-terracotta-500 hover:from-terracotta-500 hover:to-terracotta-600 text-neutral-text rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 shadow-md whitespace-nowrap"
+              className="ml-4 px-6 py-2.5 bg-gradient-to-r from-[#B8860B] to-[#9A7209] hover:from-[#9A7209] hover:to-[#7d5e07] text-white rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 shadow-md whitespace-nowrap"
             >
               <span className="font-serif">Vamos Conversar</span>
             </Link>
@@ -87,7 +87,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 hover:bg-champagne-100 rounded-lg transition-colors"
+            className="md:hidden p-2 hover:bg-[#B8860B]/10 rounded-lg transition-colors"
             aria-label="Toggle menu"
           >
             <AnimatePresence mode="wait">
@@ -99,7 +99,7 @@ export default function Header() {
                   exit={{ rotate: 90, opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <X className="w-6 h-6 text-terracotta-400" />
+                  <X className="w-6 h-6 text-[#B8860B]" />
                 </motion.div>
               ) : (
                 <motion.div
@@ -109,7 +109,7 @@ export default function Header() {
                   exit={{ rotate: -90, opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <Menu className="w-6 h-6 text-terracotta-400" />
+                  <Menu className="w-6 h-6 text-[#B8860B]" />
                 </motion.div>
               )}
             </AnimatePresence>
@@ -137,7 +137,7 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="block px-4 py-3 text-neutral-text hover:text-accent-gold hover:bg-champagne-100 rounded-lg transition-all duration-300 font-medium"
+                    className="block px-4 py-3 text-[#B8860B] hover:text-[#9A7209] hover:bg-[#B8860B]/10 rounded-lg transition-all duration-300 font-medium"
                     onClick={closeMenu}
                   >
                     {link.label}
@@ -151,7 +151,7 @@ export default function Header() {
               >
                 <Link
                   href="/contato"
-                  className="block mt-4 px-6 py-3 bg-gradient-to-r from-terracotta-400 to-terracotta-500 hover:from-terracotta-500 hover:to-terracotta-600 text-neutral-text text-center rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap"
+                  className="block mt-4 px-6 py-3 bg-gradient-to-r from-[#B8860B] to-[#9A7209] hover:from-[#9A7209] hover:to-[#7d5e07] text-white text-center rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap"
                   onClick={closeMenu}
                 >
                   <span className="font-serif">Vamos Conversar</span>
