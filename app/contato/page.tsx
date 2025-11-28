@@ -203,40 +203,16 @@ export default function Contato() {
 
               <motion.div variants={fadeInUp} className="mb-6">
                 <div className="bg-white rounded-2xl p-6 flex gap-4 hover:shadow-lg transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-green-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-neutral-text mb-2">
-                      WhatsApp
-                    </h3>
-                    <a
-                      href="https://wa.me/5511999999999"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-ocean-500 hover:text-ocean-600 transition-colors"
-                    >
-                      +55 (11) 99999-9999
-                    </a>
-                    <p className="text-xs text-neutral-text-lighter mt-1">
-                      Resposta rápida
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-
-              <motion.div variants={fadeInUp} className="mb-6">
-                <div className="bg-white rounded-2xl p-6 flex gap-4 hover:shadow-lg transition-shadow duration-300">
                   <div className="w-12 h-12 bg-ocean-100 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-ocean-600" />
                   </div>
                   <div>
                     <h3 className="font-bold text-neutral-text mb-2">Email</h3>
                     <a
-                      href="mailto:contato@casa9viagens.com"
+                      href="mailto:bia.casa9viagens@casa9viagens.com.br"
                       className="text-ocean-500 hover:text-ocean-600 transition-colors break-all"
                     >
-                      contato@casa9viagens.com
+                      bia.casa9viagens@casa9viagens.com.br
                     </a>
                     <p className="text-xs text-neutral-text-lighter mt-1">
                       Resposta em 24h
@@ -356,37 +332,17 @@ export default function Contato() {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* Phone */}
-                    <div>
-                      <label className="block text-sm font-medium text-neutral-text mb-2">
-                        Telefone / WhatsApp
-                      </label>
-                      <input
-                        {...register("phone")}
-                        type="tel"
-                        className="w-full px-4 py-3 border border-sand-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-ocean-500 focus:border-transparent transition-all"
-                        placeholder="(11) 99999-9999"
-                      />
-                    </div>
-
-                    {/* Experience Type */}
-                    <div>
-                      <label className="block text-sm font-medium text-neutral-text mb-2">
-                        Tipo de experiência
-                      </label>
-                      <select
-                        {...register("experience_type")}
-                        className="w-full px-4 py-3 border border-sand-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-ocean-500 focus:border-transparent transition-all bg-white"
-                      >
-                        <option value="">Selecione uma opção</option>
-                        <option value="romantica">Romântica</option>
-                        <option value="aventura">Aventura</option>
-                        <option value="bem-estar">Bem-estar</option>
-                        <option value="familia">Família</option>
-                        <option value="outra">Outra</option>
-                      </select>
-                    </div>
+                  {/* Phone */}
+                  <div>
+                    <label className="block text-sm font-medium text-neutral-text mb-2">
+                      Telefone / WhatsApp
+                    </label>
+                    <input
+                      {...register("phone")}
+                      type="tel"
+                      className="w-full px-4 py-3 border border-sand-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-ocean-500 focus:border-transparent transition-all"
+                      placeholder="(11) 99999-9999"
+                    />
                   </div>
 
                   {/* Destination */}

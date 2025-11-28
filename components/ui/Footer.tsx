@@ -128,7 +128,7 @@ export default function Footer() {
           {/* Newsletter */}
           <div className="lg:pl-12">
             <h3 className="text-xl font-serif font-bold text-neutral-text mb-3">
-              Inspire-se semanalmente
+              Inspire-se
             </h3>
             <p className="text-neutral-text-light mb-6">
               Receba histórias de viagem, dicas exclusivas e destinos
