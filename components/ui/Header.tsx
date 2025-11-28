@@ -46,30 +46,22 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-3 group"
+            className="flex items-center group"
             onClick={closeMenu}
           >
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
-              className="relative w-16 h-16 md:w-20 md:h-20"
+              className="relative w-32 h-16 md:w-40 md:h-20"
             >
               <Image
-                src="/logo-casa9.png"
-                alt="Casa 9 Viagens - Flor de Lótus"
+                src="/logo-casa9-new.jpg"
+                alt="Casa 9 Viagens de Reconexão"
                 fill
                 className="object-contain"
                 priority
               />
             </motion.div>
-            <div className="flex flex-col">
-              <span className="font-serif text-base md:text-lg font-bold text-neutral-text group-hover:text-accent-gold transition-colors duration-300 whitespace-nowrap">
-                Casa 9 Viagens
-              </span>
-              <span className="text-[10px] md:text-xs text-neutral-text-light tracking-wider uppercase group-hover:text-accent-gold/80 transition-colors duration-300 whitespace-nowrap">
-                Viagens de Reconexão
-              </span>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
