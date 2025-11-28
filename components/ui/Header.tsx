@@ -78,7 +78,7 @@ export default function Header() {
             ))}
             <Link
               href="/contato"
-              className="ml-4 px-6 py-2.5 bg-gradient-to-r from-[#B8860B] to-[#9A7209] hover:from-[#9A7209] hover:to-[#7d5e07] text-white rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 shadow-md whitespace-nowrap"
+              className="ml-4 px-6 py-2.5 bg-transparent border-2 border-[#B8860B] text-[#B8860B] hover:bg-[#B8860B]/10 rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 whitespace-nowrap"
             >
               <span className="font-serif">Vamos Conversar</span>
             </Link>
@@ -151,7 +151,7 @@ export default function Header() {
               >
                 <Link
                   href="/contato"
-                  className="block mt-4 px-6 py-3 bg-gradient-to-r from-[#B8860B] to-[#9A7209] hover:from-[#9A7209] hover:to-[#7d5e07] text-white text-center rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap"
+                  className="block mt-4 px-6 py-3 bg-transparent border-2 border-[#B8860B] text-[#B8860B] hover:bg-[#B8860B]/10 text-center rounded-full font-semibold transition-all duration-300 whitespace-nowrap"
                   onClick={closeMenu}
                 >
                   <span className="font-serif">Vamos Conversar</span>
