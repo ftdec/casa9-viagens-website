@@ -75,21 +75,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="inline-flex items-center gap-4 mb-6 group">
-              <div className="relative w-16 h-16">
+              <div className="relative w-48 h-24">
                 <Image
-                  src="/logo-casa9.png"
+                  src="/logo-casa9-transparent.png"
                   alt="Casa 9 Viagens - Flor de Lótus"
                   fill
                   className="object-contain"
                 />
-              </div>
-              <div>
-                <span className="text-3xl font-serif font-bold text-neutral-text block group-hover:text-[#B8956A] transition-colors">
-                  Casa 9 Viagens
-                </span>
-                <span className="text-sm text-neutral-text-light uppercase tracking-wider">
-                  Viagens de Reconexão
-                </span>
               </div>
             </Link>
             <p className="text-neutral-text-light leading-relaxed mb-6 max-w-md">
@@ -356,10 +348,10 @@ export default function Footer() {
             </p>
             <div className="flex items-center justify-center gap-2 text-ocean-500 mt-4">
               <Image
-                src="/logo-casa9.png"
+                src="/logo-casa9-transparent.png"
                 alt="Casa 9"
-                width={20}
-                height={20}
+                width={30}
+                height={30}
                 className="object-contain"
               />
               <span className="text-sm text-neutral-text-light">
