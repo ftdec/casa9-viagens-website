@@ -75,7 +75,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="inline-flex items-center gap-4 mb-6 group">
-              <div className="relative w-48 h-24">
+              <div className="relative w-80 h-40">
                 <Image
                   src="/logo-casa9-transparent.png"
                   alt="Casa 9 Viagens - Flor de Lótus"
