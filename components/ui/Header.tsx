@@ -42,7 +42,7 @@ export default function Header() {
       }`}
     >
       <div className="container-max">
-        <div className="flex items-center justify-between h-28 md:h-40">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link
             href="/"
@@ -52,7 +52,7 @@ export default function Header() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
-              className="relative w-56 h-28 md:w-80 md:h-40"
+              className="relative w-48 h-24 md:w-64 md:h-32"
             >
               <Image
                 src="/logo-casa9-transparent.png"
