@@ -203,20 +203,46 @@ export default function Contato() {
 
               <motion.div variants={fadeInUp} className="mb-6">
                 <div className="bg-white rounded-2xl p-6 flex gap-4 hover:shadow-lg transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-ocean-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-ocean-600" />
+                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-neutral-text mb-2">Email</h3>
+                    <h3 className="font-bold text-neutral-text mb-2">
+                      WhatsApp
+                    </h3>
                     <a
-                      href="mailto:bia.casa9viagens@casa9viagens.com.br"
-                      className="text-ocean-500 hover:text-ocean-600 transition-colors whitespace-nowrap overflow-hidden text-ellipsis block"
+                      href="https://wa.me/5511985842595"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-ocean-500 hover:text-ocean-600 transition-colors"
                     >
-                      bia.casa9viagens@casa9viagens.com.br
+                      +55 (11) 98584-2595
                     </a>
                     <p className="text-xs text-neutral-text-lighter mt-1">
-                      Resposta em 24h
+                      Resposta rápida
                     </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div variants={fadeInUp} className="mb-6">
+                <div className="bg-white rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex gap-4">
+                    <div className="w-12 h-12 bg-ocean-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-ocean-600" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-bold text-neutral-text mb-2">Email</h3>
+                      <a
+                        href="mailto:bia.casa9viagens@casa9viagens.com.br"
+                        className="text-ocean-500 hover:text-ocean-600 transition-colors text-sm break-words"
+                      >
+                        bia.casa9viagens@casa9viagens.com.br
+                      </a>
+                      <p className="text-xs text-neutral-text-lighter mt-1">
+                        Resposta em 24h
+                      </p>
+                    </div>
                   </div>
                 </div>
               </motion.div>

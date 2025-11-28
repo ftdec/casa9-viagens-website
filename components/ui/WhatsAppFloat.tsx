@@ -8,7 +8,7 @@ export default function WhatsAppFloat() {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  const whatsappNumber = "5511999999999";
+  const whatsappNumber = "5511985842595";
   const message = "Olá! Gostaria de conhecer mais sobre a Casa 9 Viagens e criar memórias inesquecíveis.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     message
