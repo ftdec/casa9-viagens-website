@@ -52,7 +52,7 @@ export default function Header() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
-              className="relative w-48 h-24 md:w-64 md:h-32"
+              className="relative w-44 h-22 md:w-60 md:h-30"
             >
               <Image
                 src="/logo-casa9-transparent.png"
