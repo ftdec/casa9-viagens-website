@@ -55,7 +55,7 @@ export default function Header() {
               className="relative w-32 h-16 md:w-40 md:h-20"
             >
               <Image
-                src="/logo-casa9-new.jpg"
+                src="/logo-casa9-transparent.png"
                 alt="Casa 9 Viagens de Reconexão"
                 fill
                 className="object-contain"
